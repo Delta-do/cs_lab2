@@ -36,6 +36,7 @@
             this.label_err = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -111,15 +112,26 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(662, 41);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(178, 28);
+            this.label2.Size = new System.Drawing.Size(247, 38);
             this.label2.TabIndex = 7;
             this.label2.Text = "Готовая структура";
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(187, 359);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(378, 54);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Возврат к 1 заданию >";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 38F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 630);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label_err);
@@ -147,5 +159,6 @@
         private Label label_err;
         private Button button1;
         private Label label2;
+        private Button button2;
     }
 }
