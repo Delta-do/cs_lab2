@@ -21,7 +21,7 @@ namespace cs_lab2
         private void textBoxnum_TextChanged(object sender, EventArgs e)
         {
             label_res.Visible = false;
-            double v;
+            int v;
             if (int.TryParse(textBoxnum.Text, out v))
                 label_err.Visible = false;
             else
@@ -36,6 +36,12 @@ namespace cs_lab2
         private void textBoxowner_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.Show();
         }
     }
 }

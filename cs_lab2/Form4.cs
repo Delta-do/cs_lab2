@@ -58,5 +58,11 @@ namespace cs_lab2
             label_d.Visible = true;
             label_v.Visible = true;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form5 form = new Form5();
+            form.Show();
+        }
     }
 }

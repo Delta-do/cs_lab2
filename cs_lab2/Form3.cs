@@ -69,7 +69,8 @@ namespace cs_lab2
 
         private void button2_Click(object sender, EventArgs e)
         {
-          
+            Form4 form = new Form4();
+            form.Show();
         }
     }
 }

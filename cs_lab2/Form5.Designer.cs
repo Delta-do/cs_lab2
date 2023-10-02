@@ -34,6 +34,7 @@
             this.textBoxowner = new System.Windows.Forms.TextBox();
             this.label_res = new System.Windows.Forms.Label();
             this.label_err = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -43,7 +44,7 @@
             this.label1.Location = new System.Drawing.Point(38, 41);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(258, 28);
+            this.label1.Size = new System.Drawing.Size(357, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Заполните поля структуры";
             // 
@@ -52,7 +53,7 @@
             this.textBoxnum.Location = new System.Drawing.Point(56, 119);
             this.textBoxnum.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxnum.Name = "textBoxnum";
-            this.textBoxnum.Size = new System.Drawing.Size(170, 34);
+            this.textBoxnum.Size = new System.Drawing.Size(170, 45);
             this.textBoxnum.TabIndex = 1;
             this.textBoxnum.Text = "Номер";
             this.textBoxnum.TextChanged += new System.EventHandler(this.textBoxnum_TextChanged);
@@ -62,7 +63,7 @@
             this.textBoxmodel.Location = new System.Drawing.Point(56, 181);
             this.textBoxmodel.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxmodel.Name = "textBoxmodel";
-            this.textBoxmodel.Size = new System.Drawing.Size(170, 34);
+            this.textBoxmodel.Size = new System.Drawing.Size(170, 45);
             this.textBoxmodel.TabIndex = 2;
             this.textBoxmodel.Text = "Модель";
             this.textBoxmodel.TextChanged += new System.EventHandler(this.textBoxmodel_TextChanged);
@@ -72,7 +73,7 @@
             this.textBoxowner.Location = new System.Drawing.Point(56, 249);
             this.textBoxowner.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxowner.Name = "textBoxowner";
-            this.textBoxowner.Size = new System.Drawing.Size(170, 34);
+            this.textBoxowner.Size = new System.Drawing.Size(170, 45);
             this.textBoxowner.TabIndex = 3;
             this.textBoxowner.Text = "Владелец";
             this.textBoxowner.TextChanged += new System.EventHandler(this.textBoxowner_TextChanged);
@@ -82,7 +83,7 @@
             this.label_res.AutoSize = true;
             this.label_res.Location = new System.Drawing.Point(662, 119);
             this.label_res.Name = "label_res";
-            this.label_res.Size = new System.Drawing.Size(65, 28);
+            this.label_res.Size = new System.Drawing.Size(91, 38);
             this.label_res.TabIndex = 4;
             this.label_res.Text = "label2";
             // 
@@ -91,15 +92,27 @@
             this.label_err.AutoSize = true;
             this.label_err.Location = new System.Drawing.Point(342, 119);
             this.label_err.Name = "label_err";
-            this.label_err.Size = new System.Drawing.Size(65, 28);
+            this.label_err.Size = new System.Drawing.Size(91, 38);
             this.label_err.TabIndex = 5;
             this.label_err.Text = "label2";
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(205, 370);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(378, 54);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Возврат к 1 заданию >";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 38F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 630);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label_err);
             this.Controls.Add(this.label_res);
             this.Controls.Add(this.textBoxowner);
@@ -123,5 +136,6 @@
         private TextBox textBoxowner;
         private Label label_res;
         private Label label_err;
+        private Button button2;
     }
 }
