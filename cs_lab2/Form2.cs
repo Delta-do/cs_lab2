@@ -99,5 +99,11 @@ namespace cs_lab2
             else
                 label_err.Visible = true;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form4 form = new Form4();
+            form.Show();
+        }
     }
 }
