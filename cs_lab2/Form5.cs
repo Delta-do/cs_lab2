@@ -43,5 +43,10 @@ namespace cs_lab2
             Form1 form = new Form1();
             form.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
