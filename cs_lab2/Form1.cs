@@ -20,13 +20,15 @@ namespace cs_lab2
         private void button1_Click(object sender, EventArgs e)
         {
             double x = 0, y = 0, z = 0;
-            x = Convert.ToDouble(textBoxX.Text);
-            y = Convert.ToDouble(textBoxY.Text);
-            z = Convert.ToDouble(textBoxZ.Text);
-            double a = (2 * Math.Pow(Math.Cos(x - Math.PI / 6), 4)) / (0.5 + Math.Pow(Math.Sin(y), 2));
-            double b = 1 + Math.Pow(z, 2) / (3 + Math.Pow(z, 2) / 5);
-            label5.Text = "a = " + Convert.ToString(a) + "\nb = " + Convert.ToString(b);
-            label5.Visible = true;
+            if (double.TryParse(textBoxX.Text, out x) && double.TryParse(textBoxY.Text, out y) && double.TryParse(textBoxZ.Text, out z))
+            {
+                double a = (2 * Math.Pow(Math.Cos(x - Math.PI / 6), 4)) / (0.5 + Math.Pow(Math.Sin(y), 2));
+                double b = 1 + Math.Pow(z, 2) / (3 + Math.Pow(z, 2) / 5);
+                label5.Text = "a = " + Convert.ToString(a) + "\nb = " + Convert.ToString(b);
+                label5.Visible = true;
+            }
+            else
+                label4.Visible = true;
         }
 
         private void textBoxX_TextChanged(object sender, EventArgs e)
